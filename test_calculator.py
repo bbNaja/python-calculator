@@ -25,7 +25,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(4, 4), 16)
 
     def test_divide(self):
-        self.assertEqual(self.calc.divide(4, 0), 0)
+        self.assertEqual(self.calc.divide(4, 0), "Undefined")
     
     def test_divide(self):
         self.assertEqual(self.calc.divide(4, 2), 2)

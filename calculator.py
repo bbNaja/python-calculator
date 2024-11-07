@@ -13,6 +13,8 @@ class Calculator:
 
     def divide(self, a, b):
         result = 1
+        if b == 0:
+            return 'Undefined'
         while a > b:
             a = self.subtract(a, b)
             result += 1
@@ -30,5 +32,5 @@ if __name__ == "__main__":
     print("Example: addition: ", calc.add(1, 2))
     print("Example: subtraction: ", calc.subtract(4, 2))
     print("Example: multiplication: ", calc.multiply(2, 3))
-    print("Example: division: ", calc.divide(4, 2))
+    print("Example: division: ", calc.divide(4, 0))
     print("Example: modulo: ", calc.modulo(10, 3))
